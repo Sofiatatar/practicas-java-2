@@ -1,0 +1,21 @@
+
+package ejercicio1;
+
+/*
+Crear una clase llamada Libro que contenga los siguientes atributos: ISBN, Título,
+Autor, Número de páginas, y un constructor con todos los atributos pasados por
+parámetro y un constructor vacío. Crear un método para cargar un libro pidiendo los
+datos al usuario y luego informar mediante otro método el número de ISBN, el título,
+el autor del libro y el numero de páginas. */
+
+public class Main {
+    
+    public static void main(String[] args) {
+        
+        BookControl bookControl = new BookControl();
+        Book book1 = bookControl.createBook();
+        
+        System.out.println(book1.toString());
+       
+    }
+}
